@@ -179,7 +179,7 @@ body.dark-mode h4 {
 .footer-link {
     position: fixed;
     bottom: 20px; /* Odległość od dolnej krawędzi */
-    right: 10px; /* Odległość od prawej krawędzi */
+    right: 6px; /* Odległość od prawej krawędzi */
     background-color: #007bff; /* Kolor tła */
     color: #fff; /* Kolor tekstu */
     padding: 6px 15px; /* Wewnętrzne odstępy */
@@ -191,6 +191,6 @@ body.dark-mode h4 {
 
 .footer-link:hover {
     background-color: #0056b3; /* Kolor tła przy najechaniu */
-    transform: scale(1.05); /* Powiększenie przy najechaniu */
+    transform: scale(1.03); /* Powiększenie przy najechaniu */
 }
 
