@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const wynikGestosc = document.getElementById("wynikGestosc");
 
     zapiszButton.addEventListener('click', () => {
-        let masaValue = parseFloat(masa.value);
-        let objValue = parseFloat(obj.value);
+        let masaValue = parseFloat(masa.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
+        let objValue = parseFloat(obj.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
         
         if (objValue !== 0) {
             wynikGestosc.textContent = (masaValue / objValue).toFixed(2);
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const wynikPredkosc = document.getElementById("wynikPredkosc");
 
     obliczPredkoscButton.addEventListener('click', () => {
-        let dystansValue = parseFloat(dystans.value);
-        let czasValue = parseFloat(czas.value);
+        let dystansValue = parseFloat(dystans.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
+        let czasValue = parseFloat(czas.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
         
         if (czasValue !== 0) {
             wynikPredkosc.textContent = (dystansValue / czasValue).toFixed(2);
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const wynikSila = document.getElementById("wynikSila");
 
     obliczSilaButton.addEventListener('click', () => {
-        let masaValue = parseFloat(masaSila.value);
-        let przyspieszenieValue = parseFloat(przyspieszenie.value);
+        let masaValue = parseFloat(masaSila.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
+        let przyspieszenieValue = parseFloat(przyspieszenie.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
         
         wynikSila.textContent = (masaValue * przyspieszenieValue).toFixed(2);
     });
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const wynikMoc = document.getElementById("wynikMoc");
 
     obliczMocButton.addEventListener('click', () => {
-        let pracaValue = parseFloat(pracaMoc.value);
-        let czasValue = parseFloat(czasMoc.value);
+        let pracaValue = parseFloat(pracaMoc.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
+        let czasValue = parseFloat(czasMoc.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
         
         if (czasValue !== 0) {
             wynikMoc.textContent = (pracaValue / czasValue).toFixed(2);
@@ -64,20 +64,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Praca
-    const sila = document.getElementById("sila");
+    const silaPraca = document.getElementById("sila");
     const przemieszczenie = document.getElementById("przemieszczenie");
-    const obliczPracaButton = document.getElementById("obliczPraca");
+    const obliczPraceButton = document.getElementById("obliczPraca");
     const wynikPraca = document.getElementById("wynikPraca");
 
-    obliczPracaButton.addEventListener('click', () => {
-        let silaValue = parseFloat(sila.value);
-        let przemieszczenieValue = parseFloat(przemieszczenie.value);
+    obliczPraceButton.addEventListener('click', () => {
+        let silaValue = parseFloat(silaPraca.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
+        let przemieszczenieValue = parseFloat(przemieszczenie.value.replace(/[^\d.-]/g, '')); // Usuwa nie-numeryczne znaki
         
         wynikPraca.textContent = (silaValue * przemieszczenieValue).toFixed(2);
     });
 
     // Nocny tryb
-    const themeToggleButton = document.getElementById("theme-toggle");
+    const themeToggleButton = document.querySelector(".theme-toggle");
 
     themeToggleButton.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
