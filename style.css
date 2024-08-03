@@ -174,3 +174,23 @@ body.dark-mode h3,
 body.dark-mode h4 {
     color: #28a745;
 }
+
+/* Stylizacja linku w prawym dolnym rogu */
+.footer-link {
+    position: fixed;
+    bottom: 20px; /* Odległość od dolnej krawędzi */
+    right: 20px; /* Odległość od prawej krawędzi */
+    background-color: #007bff; /* Kolor tła */
+    color: #fff; /* Kolor tekstu */
+    padding: 10px 20px; /* Wewnętrzne odstępy */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    font-size: 1em; /* Rozmiar czcionki */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animacje */
+}
+
+.footer-link:hover {
+    background-color: #0056b3; /* Kolor tła przy najechaniu */
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+
