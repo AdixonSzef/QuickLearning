@@ -179,13 +179,13 @@ body.dark-mode h4 {
 .footer-link {
     position: fixed;
     bottom: 20px; /* Odległość od dolnej krawędzi */
-    right: 20px; /* Odległość od prawej krawędzi */
+    right: 10px; /* Odległość od prawej krawędzi */
     background-color: #007bff; /* Kolor tła */
     color: #fff; /* Kolor tekstu */
-    padding: 10px 20px; /* Wewnętrzne odstępy */
+    padding: 6px 15px; /* Wewnętrzne odstępy */
     border-radius: 5px; /* Zaokrąglenie rogów */
     text-decoration: none; /* Usunięcie podkreślenia */
-    font-size: 1em; /* Rozmiar czcionki */
+    font-size: 0.8em; /* Rozmiar czcionki */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Animacje */
 }
 
