@@ -1,0 +1,103 @@
+/* Resetowanie stylów */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylizacja całej strony */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    position: relative; /* Umożliwia precyzyjne ustawienie przycisku nawigacyjnego */
+}
+
+/* Stylizacja kalkulatora */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px; /* Zwiększona szerokość kalkulatora */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    height: 60px; /* Wysokość wyświetlacza */
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; /* Mały odstęp między przyciskami */
+}
+
+.btn {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+#equals {
+    background-color: #f90;
+    color: white;
+    grid-column: span 2;
+}
+
+#equals:hover {
+    background-color: #e80;
+}
+
+#clear {
+    background-color: #f00;
+    color: white;
+    grid-column: span 2;
+}
+
+#clear:hover {
+    background-color: #c00;
+}
+
+/* Stylizacja przycisku nawigacyjnego */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizyka&Chemia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="header-container">
+        <a href="kalkulator.html" class="back-button">Kalkulator</a>
+        <h2>Gęstość</h2>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>
+    
+    <div class="calculator-container">
+        <!-- Sekcje z obliczeniami -->
+        <div class="section">
+            <h3>Gęstość</h3>
+            <input type="number" id="masa" placeholder="Wpisz masę">
+            <input type="number" id="obj" placeholder="Wpisz objętość">
+            <button id="zapisz">Zapisz</button>
+            <div class="result-box">
+                <h4>WYNIK GĘSTOŚCI:</h4> 
+                <p id="wynikGestosc">0</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Prędkość</h3>
+            <input type="number" id="dystans" placeholder="Wpisz przemieszczenie">
+            <input type="number" id="czas" placeholder="Wpisz czas">
+            <button id="obliczPredkosc">Oblicz</button>
+            <div class="result-box">
+                <h4>WYNIK PRĘDKOŚCI:</h4>
+                <p id="wynikPredkosc">0</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Siła</h3>
+            <input type="number" id="masaSila" placeholder="Wpisz masę">
+            <input type="number" id="przyspieszenie" placeholder="Wpisz przyspieszenie">
+            <button id="obliczSila">Oblicz</button>
+            <div class="result-box">
+                <h4>WYNIK SIŁY:</h4>
+                <p id="wynikSila">0</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Moc</h3>
+            <input type="number" id="praca" placeholder="Wpisz pracę">
+            <input type="number" id="czasMoc" placeholder="Wpisz czas">
+            <button id="obliczMoc">Oblicz</button>
+            <div class="result-box">
+                <h4>WYNIK MOCY:</h4>
+                <p id="wynikMoc">0</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Praca</h3>
+            <input type="number" id="sila" placeholder="Wpisz siłę">
+            <input type="number" id="przemieszczenie" placeholder="Wpisz przemieszczenie">
+            <button id="obliczPraca">Oblicz</button>
+            <div class="result-box">
+                <h4>WYNIK PRACY:</h4>
+                <p id="wynikPraca">0</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
